@@ -1,0 +1,537 @@
+/* Global styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-text {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+/* Home section styles */
+.home-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home-img {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+} */
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-heading {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home-image {
+  flex: 1;
+  text-align: right;
+}
+
+.home-img {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.home-img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* About section styles */
+.about-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-img-container {
+  position:relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-info {
+  max-width: 800px;
+  margin: 40px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Project section styles */
+.project-section {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.project-heading {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-btn-grp {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.project-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Skill section styles */
+.skill-section {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.heading {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card {
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.skill-level {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-info {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .link {
+    margin-left: 10px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+  }
+
+  .home-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-img-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-info {
+    font-size: 14px;
+  }
+
+  .project-card {
+    width: 250px;
+  }
+
+  .skill-card {
+    width: 150px;
+  }
+
+  .skill-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-level {
+    font-size: 20px;
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
+
+  .skill-info {
+    font-size: 12px;
+  }
+}
+
+/* Additional styles for contact form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive styles for contact form */
+@media (max-width: 768px) {
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea {
+    padding: 6px;
+  }
+}
+
+/* Additional styles for footer */
+footer {
+  background-color: #333;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reach-out {
+  margin-bottom: 30px;
+}
+
+.reach-out h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.reach-out p {
+  font-size: 16px;
+  margin: 0;
+  color: #ccc;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-media-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-media-links a:hover {
+  background-color: #ccc;
+}
+
+.social-media-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.rights-reserved {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.contact-info {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+/* Responsive styles for footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  .reach-out h3 {
+    font-size: 20px;
+  }
+
+  .reach-out p,
+  .rights-reserved,
+  .contact-info {
+    font-size: 10px;
+  }
+
+  .social-media-links a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-media-links img {
+    width: 25px;
+    height: 25px;
+  }
+}
+/* Reset some default styles */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ccc;
+}
+
+/* Menu icon styles */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .menu.active {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+
+  .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between the logo and text */
+}
+

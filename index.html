@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="content" description="This is a personal portfolio website of Paras Jain">
+    <link rel="icon" href="pj.jpg.jpg">
+    <title>Paras Jain</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        /* Responsive styles for footer */
+        @media (max-width: 768px) {
+        footer {
+            padding: 10px;
+        }
+
+        .rights-reserved {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+          .navbar {
+            padding: 10px;
+          }
+  
+          .link-group {
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+  
+          .link {
+            margin-bottom: 10px;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <script src="app.js"></script>
+    <header>
+    <nav class="navbar">
+      <div class="logo"><img src="pj.jpg.jpg"></div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <ul class="menu">
+          <li><a href="#first">Home</a></li>
+          <li><a href="#second">About</a></li>
+          <li><a href="#fourth">Skills</a></li>
+          <li><a href="#third">Projects</a></li>
+          <li><a href="#fifth">Contact</a></li>
+      </ul>
+  </nav>
+
+  <script>
+      document.getElementById('menu-icon').addEventListener('click', function() {
+          document.querySelector('.menu').classList.toggle('active');
+      });
+  </script>
+    </header>
+    <section class="home-section active" id="first">
+      <img src="whiteImageParas.jpeg" class="home-img" alt="" />
+      <h1 class="hero-heading">
+        Hi, <br />
+        I'm <span class="auto-type"></span>
+      </h1>
+    </section>
+    
+
+    <!-- about section -->
+    <section class="about-section active" id="second">
+        <div class="about">
+            <div class="about-img-container">
+                <img src="favicon.png" class="about-img" alt="Error while loading">
+                <!-- <button class="download-cv-btn">downlaod cv</button> -->
+            </div>
+            <p class="about-info">"Hi, I'm Paras Jain , a passionate frontend developer with a strong focus on creating exceptional user experiences. 
+                With expertise in Java  and a knack for problem-solving. I thrive in collaborative environments and enjoy working with teams to bring innovative ideas to life. 
+                Let's create amazing user interfaces together!"</p>
+        </div>
+    </section>
+
+    <!-- project section -->
+<section class="project-section active" id="third">
+    <h1 class="project-heading">Some of My Projects</h1>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="pr1.jpg" class="project-img" alt="">
+            <div class="project-content">
+                <h1 class="Sorting Visulaizer">Project 1</b></h1>
+                <p class="project-info">
+                  <br><br>
+                    The “Sorting Visualiser” project is basically a web development project which is used to visualize the sorting algorithms.
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github" id="txt1"><a href="https://github.com/Paras7403/Sorting-Visualizer" target="_blank">Github Repo</a></button>
+                    <button class="project-btn live" id="txt2"><a href="https://paras7403.github.io/Sorting-Visualizer/" target="_blank">See Live</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+                <img src="p2.jpg" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="Text Editor">Project 2</h1>
+                    <p class="project-info">
+                      <br><br>
+                        "Text editor" with stack based editing functionality 
+                        of Cut, Copy, Paste along with File handling, Formatting of fonts and background color using Java.
+                    </p>
+                    <div class="project-btn-grp">
+                        <button class="project-btn github"><a href="https://github.com/Paras7403/Notepad-Text-Editor" target="_blank">Github Repo</a></button>
+                        <button class="project-btn live" id="txt2"><a href="https://drive.google.com/file/d/1NGWv18l1sAzjKW1XqurZUnBrV3RIBLJN/view?usp=drive_link" target="_blank">See Live</a></button>
+                      </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <img src="p3.jpg" class="project-img" alt="">
+              <div class="project-content">
+                  <h1 class="WhatsApp">Project 3</h1>
+                  <p class="project-info">
+                    <br><br>
+                    A chat application using Least Recently Used Cache. It provides insertion, deletion, and searching in constant time.
+                  </p>
+                  <div class="project-btn-grp">
+                      <button class="project-btn github"><a href="https://github.com/Paras7403/Chat-List-Using-LRU-Cache-WhatsApp" target="_blank">Github Repo</a></button>
+                      <button class="project-btn live" id="txt2"><a href="https://paras7403.github.io/Chat-List-Using-LRU-Cache-WhatsApp/" target="_blank">See Live</a></button>
+                  </div>
+              </div>
+          </div>
+
+    </div>
+    
+</section>
+
+<!-- skills -->
+
+<div class="skill-section" id="fourth">
+  <h1 class="heading">Skills</h1>
+  <div class="skills-container">
+      
+    <!-- Html -->
+    <div class="skill-card">
+          <img src="colourHtml.png" class="skill-img" alt="Error while loading">
+          <h1 class="skill-name">HTML</h1>
+          <p class="skill-info">HTML is the foundational language for structuring and organizing web content, allowing me to create well-organized and semantically meaningful web pages.</p>
+      </div>
+
+        <!-- CSS -->
+        <div class="skill-card">
+            <img src="colourCss.png" class="skill-img" alt="Error while loading">
+            <h1 class="skill-name">CSS</h1>
+            <p class="skill-info">With CSS, I bring creativity to life by styling web pages, designing beautiful layouts, and ensuring a visually appealing and responsive user experience.</p>
+        </div>
+
+         <!-- bootstrap -->
+         <div class="skill-card">
+          <img src="bootstrap.png" class="skill-img" alt="Error while loading">
+          <h1 class="skill-name">BootStrap</h1>
+          <p class="skill-info">Bootstrap is a popular framework for building responsive websites. It offers ready-to-use components and a grid system, making it easy to create modern and visually appealing interfaces.</p>
+      </div>
+
+        <!-- js -->
+        <div class="skill-card">
+            <img src="colourjs.png" class="skill-img" alt="Error while loading">
+            <h1 class="skill-name">JAVASCRIPT</h1>
+            <p class="skill-info">JavaScript empowers me to add interactivity, create dynamic functionalities, and enhance user engagement on web pages, making the user experience more interactive and enjoyable.</p>
+        </div>
+
+        <!-- Angular -->
+        <div class="skill-card">
+          <img src="angular.jpg" class="skill-img" alt="Error while loading">
+          <h1 class="skill-name">Angular</h1>
+          <p class="skill-info">Angular is a Google-developed open-source framework for building dynamic web applications with TypeScript. It provides tools for structured component-based development, data binding, routing, and state management.</p>
+      </div>
+
+      <!-- git and github -->
+      <div class="skill-card">
+        <img src="git-and-github.png" class="skill-img" alt="Error while loading">
+        <!-- <div class="skill-level">90%</div> -->
+        <h1 class="skill-name">Git and Github</h1>
+        <p class="skill-info">I adeptly employ Git for effective version control, 
+          ensuring orderly source code management. Moreover, I am proficient in GitHub, using it to orchestrate 
+          collaborative development through pull requests, 
+          issue tracking, and project coordination.</p>
+    </div>
+
+        <!-- java -->
+        <div class="skill-card">
+            <img src="colourjava.png" class="skill-img" alt="Error while loading">
+            <!-- <div class="skill-level">90%</div> -->
+            <h1 class="skill-name">JAVA</h1>
+            <p class="skill-info">Java is a versatile programming language that enables me to develop robust and scalable applications, with its rich ecosystem of libraries and frameworks supporting a wide range of industries and platforms.</p>
+        </div>
+
+        <!-- dsa card -->
+        <div class="skill-card">
+            <img src="dsa.png" class="skill-img" alt="Error while loading">
+            <!-- <div class="skill-level">92%</div> -->
+            <h1 class="skill-name">Data Structures and Algorithms</h1>
+            <p class="skill-info">I utilize efficient algorithms and optimized data structures to solve complex problems and design high-performance solutions, ensuring scalability and optimal performance in my programming endeavors.</p>
+        </div>
+
+      <!-- oops -->
+      <div class="skill-card">
+        <img src="oops.png" class="skill-img" alt="Error while loading">
+        <!-- <div class="skill-level">97%</div> -->
+        <h1 class="skill-name">OOPS</h1>
+        <p class="skill-info">OOPS (Object-Oriented Programming): OOPS is a programming paradigm that focuses on creating objects that encapsulate data and behavior. It promotes code reusability and modular design, enhancing software development efficiency and maintainability.</p>
+    </div>
+
+    <!-- c programing language -->
+    <div class="skill-card">
+      <img src="c.png" class="skill-img" alt="Error while loading">
+      <!-- <div class="skill-level">90%</div> -->
+      <h1 class="skill-name">C</h1>
+      <p class="skill-info">It allows programmers to have fine-grained control over the execution of their programs, making it suitable for systems programming and embedded systems development.</p>
+  </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var  typed=new Typed(".auto-type",{
+        strings: ["Paras Jain","Aspiring SDE"],
+        typeSpeed:150,
+        blackSpeed:150,
+        loop:true
+    });
+
+    // Toggle the menu when menu icon is clicked
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      document.querySelector('.link-group').classList.toggle('show');
+    });
+  });
+
+</script>
+
+  <footer>
+    <div class="container" id="fifth">
+      <div class="reach-out">
+        <h3>Reach Out to me!</h3>
+        <p>U.P, India</p>
+        <p>Open for opportunities: Yes</p>
+      </div>
+      <div class="social-media-links">
+        <a href="https://www.linkedin.com/in/jainparas1dit" target="_blank" rel="noopener noreferrer">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Paras7403" target="_blank" rel="noopener noreferrer">
+          <img src="github.png" alt="GitHub">
+        </a>
+        <a href="mailto:paras7403@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src="gmail.png" alt="Gmail.com">
+        </a>
+      </div>
+      <p class="rights-reserved">&copy; 2023. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+  </body>
+</html>
